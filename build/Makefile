@@ -150,6 +150,60 @@ getout.cpp.s:
 	$(MAKE) -f CMakeFiles/getout.dir/build.make CMakeFiles/getout.dir/getout.cpp.s
 .PHONY : getout.cpp.s
 
+keymap.o: keymap.cpp.o
+
+.PHONY : keymap.o
+
+# target to build an object file
+keymap.cpp.o:
+	$(MAKE) -f CMakeFiles/getout.dir/build.make CMakeFiles/getout.dir/keymap.cpp.o
+.PHONY : keymap.cpp.o
+
+keymap.i: keymap.cpp.i
+
+.PHONY : keymap.i
+
+# target to preprocess a source file
+keymap.cpp.i:
+	$(MAKE) -f CMakeFiles/getout.dir/build.make CMakeFiles/getout.dir/keymap.cpp.i
+.PHONY : keymap.cpp.i
+
+keymap.s: keymap.cpp.s
+
+.PHONY : keymap.s
+
+# target to generate assembly for a file
+keymap.cpp.s:
+	$(MAKE) -f CMakeFiles/getout.dir/build.make CMakeFiles/getout.dir/keymap.cpp.s
+.PHONY : keymap.cpp.s
+
+utils.o: utils.cpp.o
+
+.PHONY : utils.o
+
+# target to build an object file
+utils.cpp.o:
+	$(MAKE) -f CMakeFiles/getout.dir/build.make CMakeFiles/getout.dir/utils.cpp.o
+.PHONY : utils.cpp.o
+
+utils.i: utils.cpp.i
+
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.cpp.i:
+	$(MAKE) -f CMakeFiles/getout.dir/build.make CMakeFiles/getout.dir/utils.cpp.i
+.PHONY : utils.cpp.i
+
+utils.s: utils.cpp.s
+
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.cpp.s:
+	$(MAKE) -f CMakeFiles/getout.dir/build.make CMakeFiles/getout.dir/utils.cpp.s
+.PHONY : utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +216,12 @@ help:
 	@echo "... getout.o"
 	@echo "... getout.i"
 	@echo "... getout.s"
+	@echo "... keymap.o"
+	@echo "... keymap.i"
+	@echo "... keymap.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 

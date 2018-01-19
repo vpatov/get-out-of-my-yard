@@ -25,6 +25,8 @@ set(ALL_LIBS
 # User playground
 add_executable(getout
     getout.cpp
+    utils.cpp
+    keymap.cpp
 )
 
 

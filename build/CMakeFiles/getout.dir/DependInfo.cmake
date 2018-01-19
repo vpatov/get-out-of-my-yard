@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vasia/repos/get-out-of-my-yard/getout.cpp" "/home/vasia/repos/get-out-of-my-yard/build/CMakeFiles/getout.dir/getout.cpp.o"
+  "/home/vasia/repos/get-out-of-my-yard/keymap.cpp" "/home/vasia/repos/get-out-of-my-yard/build/CMakeFiles/getout.dir/keymap.cpp.o"
+  "/home/vasia/repos/get-out-of-my-yard/utils.cpp" "/home/vasia/repos/get-out-of-my-yard/build/CMakeFiles/getout.dir/utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
