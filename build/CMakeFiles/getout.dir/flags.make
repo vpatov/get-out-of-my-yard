@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/freetype2 -I/usr/local/include/GLFW -isystem /usr/local/include 
+CXX_INCLUDES = -I/usr/include/freetype2 -I/usr/include/x86_64-linux-gnu/freetype2 -I/usr/local/include/GLFW -isystem /usr/local/include 
 

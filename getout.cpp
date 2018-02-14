@@ -150,8 +150,12 @@ bool process_keys(){
 
 		if (glfwGetKey(window, GLFW_KEY_ESCAPE ) == GLFW_PRESS){
 			printf("ESC key pressed.\n");
+			return true;
 			break;
 		}
+
+		if (key_press_started)
+			return false;
 
 	} // Check if the ESC key was pressed or the window was closed
 	while(glfwWindowShouldClose(window) == 0 );
@@ -221,7 +225,9 @@ int main( void )
 		return 0;
 	}
 	else {
+		std::cout << "I scream.. no sound. <I had already tried>." << std::endl;
 		intruder();
+		
 
 	}
 

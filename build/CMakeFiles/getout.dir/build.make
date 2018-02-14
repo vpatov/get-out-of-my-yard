@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasia/repos/get-out-of-my-yard
+CMAKE_SOURCE_DIR = /home/vpatov/repos/get-out-of-my-yard
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasia/repos/get-out-of-my-yard/build
+CMAKE_BINARY_DIR = /home/vpatov/repos/get-out-of-my-yard/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/getout.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/getout.dir/flags.make
 
 CMakeFiles/getout.dir/getout.cpp.o: CMakeFiles/getout.dir/flags.make
 CMakeFiles/getout.dir/getout.cpp.o: ../getout.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasia/repos/get-out-of-my-yard/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/getout.dir/getout.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/getout.dir/getout.cpp.o -c /home/vasia/repos/get-out-of-my-yard/getout.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vpatov/repos/get-out-of-my-yard/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/getout.dir/getout.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/getout.dir/getout.cpp.o -c /home/vpatov/repos/get-out-of-my-yard/getout.cpp
 
 CMakeFiles/getout.dir/getout.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/getout.dir/getout.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasia/repos/get-out-of-my-yard/getout.cpp > CMakeFiles/getout.dir/getout.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vpatov/repos/get-out-of-my-yard/getout.cpp > CMakeFiles/getout.dir/getout.cpp.i
 
 CMakeFiles/getout.dir/getout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/getout.dir/getout.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasia/repos/get-out-of-my-yard/getout.cpp -o CMakeFiles/getout.dir/getout.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vpatov/repos/get-out-of-my-yard/getout.cpp -o CMakeFiles/getout.dir/getout.cpp.s
 
 CMakeFiles/getout.dir/getout.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/getout.dir/getout.cpp.o.provides.build: CMakeFiles/getout.dir/getout.
 
 CMakeFiles/getout.dir/utils.cpp.o: CMakeFiles/getout.dir/flags.make
 CMakeFiles/getout.dir/utils.cpp.o: ../utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasia/repos/get-out-of-my-yard/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/getout.dir/utils.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/getout.dir/utils.cpp.o -c /home/vasia/repos/get-out-of-my-yard/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vpatov/repos/get-out-of-my-yard/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/getout.dir/utils.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/getout.dir/utils.cpp.o -c /home/vpatov/repos/get-out-of-my-yard/utils.cpp
 
 CMakeFiles/getout.dir/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/getout.dir/utils.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasia/repos/get-out-of-my-yard/utils.cpp > CMakeFiles/getout.dir/utils.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vpatov/repos/get-out-of-my-yard/utils.cpp > CMakeFiles/getout.dir/utils.cpp.i
 
 CMakeFiles/getout.dir/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/getout.dir/utils.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasia/repos/get-out-of-my-yard/utils.cpp -o CMakeFiles/getout.dir/utils.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vpatov/repos/get-out-of-my-yard/utils.cpp -o CMakeFiles/getout.dir/utils.cpp.s
 
 CMakeFiles/getout.dir/utils.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/getout.dir/utils.cpp.o.provides.build: CMakeFiles/getout.dir/utils.cp
 
 CMakeFiles/getout.dir/keymap.cpp.o: CMakeFiles/getout.dir/flags.make
 CMakeFiles/getout.dir/keymap.cpp.o: ../keymap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasia/repos/get-out-of-my-yard/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/getout.dir/keymap.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/getout.dir/keymap.cpp.o -c /home/vasia/repos/get-out-of-my-yard/keymap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vpatov/repos/get-out-of-my-yard/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/getout.dir/keymap.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/getout.dir/keymap.cpp.o -c /home/vpatov/repos/get-out-of-my-yard/keymap.cpp
 
 CMakeFiles/getout.dir/keymap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/getout.dir/keymap.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasia/repos/get-out-of-my-yard/keymap.cpp > CMakeFiles/getout.dir/keymap.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vpatov/repos/get-out-of-my-yard/keymap.cpp > CMakeFiles/getout.dir/keymap.cpp.i
 
 CMakeFiles/getout.dir/keymap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/getout.dir/keymap.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasia/repos/get-out-of-my-yard/keymap.cpp -o CMakeFiles/getout.dir/keymap.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vpatov/repos/get-out-of-my-yard/keymap.cpp -o CMakeFiles/getout.dir/keymap.cpp.s
 
 CMakeFiles/getout.dir/keymap.cpp.o.requires:
 
@@ -155,7 +155,7 @@ getout: /usr/lib/x86_64-linux-gnu/libXinerama.so
 getout: /usr/lib/x86_64-linux-gnu/libXxf86vm.so
 getout: /usr/lib/x86_64-linux-gnu/libXcursor.so
 getout: CMakeFiles/getout.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vasia/repos/get-out-of-my-yard/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable getout"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vpatov/repos/get-out-of-my-yard/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable getout"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/getout.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -174,6 +174,6 @@ CMakeFiles/getout.dir/clean:
 .PHONY : CMakeFiles/getout.dir/clean
 
 CMakeFiles/getout.dir/depend:
-	cd /home/vasia/repos/get-out-of-my-yard/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasia/repos/get-out-of-my-yard /home/vasia/repos/get-out-of-my-yard /home/vasia/repos/get-out-of-my-yard/build /home/vasia/repos/get-out-of-my-yard/build /home/vasia/repos/get-out-of-my-yard/build/CMakeFiles/getout.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vpatov/repos/get-out-of-my-yard/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vpatov/repos/get-out-of-my-yard /home/vpatov/repos/get-out-of-my-yard /home/vpatov/repos/get-out-of-my-yard/build /home/vpatov/repos/get-out-of-my-yard/build /home/vpatov/repos/get-out-of-my-yard/build/CMakeFiles/getout.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/getout.dir/depend
 

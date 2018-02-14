@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/vasia/repos/get-out-of-my-yard/getout.cpp
+/home/vpatov/repos/get-out-of-my-yard/getout.cpp
 stdio.h
 -
 stdlib.h
@@ -20,11 +20,11 @@ string
 vector
 -
 getout.h
-/home/vasia/repos/get-out-of-my-yard/getout.h
+/home/vpatov/repos/get-out-of-my-yard/getout.h
 iostream
 -
 
-/home/vasia/repos/get-out-of-my-yard/getout.h
+/home/vpatov/repos/get-out-of-my-yard/getout.h
 glfw3.h
 -
 string
@@ -36,13 +36,13 @@ vector
 iterator
 -
 
-/home/vasia/repos/get-out-of-my-yard/keymap.cpp
+/home/vpatov/repos/get-out-of-my-yard/keymap.cpp
 getout.h
-/home/vasia/repos/get-out-of-my-yard/getout.h
+/home/vpatov/repos/get-out-of-my-yard/getout.h
 
-/home/vasia/repos/get-out-of-my-yard/utils.cpp
+/home/vpatov/repos/get-out-of-my-yard/utils.cpp
 getout.h
-/home/vasia/repos/get-out-of-my-yard/getout.h
+/home/vpatov/repos/get-out-of-my-yard/getout.h
 glfw3.h
 -
 string
@@ -55,6 +55,64 @@ iterator
 -
 
 /usr/include/freetype2/freetype/config/ftheader.h
+x86_64-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+x86_64-linux-gnux32/freetype2/freetype/config/ftheader.h
+-
+i386-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+aarch64-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+alpha-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+arm-linux-gnueabihf/freetype2/freetype/config/ftheader.h
+-
+arm-linux-gnueabi/freetype2/freetype/config/ftheader.h
+-
+hppa-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+ia64-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+m68k-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+mipsel-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+mips64el-linux-gnuabin32/freetype2/freetype/config/ftheader.h
+-
+mips64el-linux-gnuabi64/freetype2/freetype/config/ftheader.h
+-
+mips-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+mips64-linux-gnuabin32/freetype2/freetype/config/ftheader.h
+-
+mips64-linux-gnuabi64/freetype2/freetype/config/ftheader.h
+-
+or1k-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+powerpc-linux-gnuspe/freetype2/freetype/config/ftheader.h
+-
+powerpc64le-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+powerpc64-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+powerpc-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+s390x-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+s390-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+sh4-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+sparc64-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+sparc-linux-gnu/freetype2/freetype/config/ftheader.h
+-
+x86_64-kfreebsd-gnu/freetype2/freetype/config/ftheader.h
+-
+i386-kfreebsd-gnu/freetype2/freetype/config/ftheader.h
+-
+i386-gnu/freetype2/freetype/config/ftheader.h
+-
 
 /usr/include/freetype2/ft2build.h
 freetype/config/ftheader.h

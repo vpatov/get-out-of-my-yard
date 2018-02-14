@@ -1,4 +1,4 @@
-# Install script for directory: /home/vasia/repos/get-out-of-my-yard
+# Install script for directory: /home/vpatov/repos/get-out-of-my-yard
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vasia/repos/get-out-of-my-yard/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/vpatov/repos/get-out-of-my-yard/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
