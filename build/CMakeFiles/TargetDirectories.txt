@@ -1,3 +1,3 @@
-/home/vpatov/repos/get-out-of-my-yard/build/CMakeFiles/rebuild_cache.dir
-/home/vpatov/repos/get-out-of-my-yard/build/CMakeFiles/edit_cache.dir
-/home/vpatov/repos/get-out-of-my-yard/build/CMakeFiles/getout.dir
+/Users/vasia/repos/get-out-of-my-yard/build/CMakeFiles/rebuild_cache.dir
+/Users/vasia/repos/get-out-of-my-yard/build/CMakeFiles/edit_cache.dir
+/Users/vasia/repos/get-out-of-my-yard/build/CMakeFiles/getout.dir
