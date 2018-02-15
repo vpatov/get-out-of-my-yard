@@ -35,6 +35,11 @@ bool key_press_started = false;
 	1) configure the freetype library to display some text
 	2) Refactor, organize and make the code cleaner and more elegant
 	3) Key combo to break program.
+	4) Talk to python code that will take picture. 
+		a) Open up socket, bind it to ephemeral port on localhost
+		b) Pass port number to python script.
+		c) Python script waits for signal from C program to take picture.
+		d) Python script sends signal to c program once script is done.
 */
 
 
@@ -101,6 +106,7 @@ void intruder(){
 	if (music.openFromFile("alarm.wav"))
 		music.play();
 */
+
 
 	glfwSetWindowMonitor(window,monitor,0,0,mode->width,mode->height,mode->refreshRate);
 	set_red();
@@ -188,7 +194,8 @@ int main( void )
 		return -1;
 	}
 
-
+	system("python3");
+	
 	monitor = glfwGetPrimaryMonitor();
 	mode = glfwGetVideoMode(monitor);
 
