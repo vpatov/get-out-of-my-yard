@@ -4,7 +4,7 @@
 #include <ft2build.h>
 
 
-#include <SFML/Audio.hpp>
+//#include <SFML/Audio.hpp>
 #include <string>
 #include <vector>
 #include "getout.h"
@@ -96,11 +96,11 @@ void intruder(){
 	float cur_seconds, prev_seconds;
 	bool red = true;
 
-
+/*
 	sf::Music music;
 	if (music.openFromFile("alarm.wav"))
 		music.play();
-
+*/
 
 	glfwSetWindowMonitor(window,monitor,0,0,mode->width,mode->height,mode->refreshRate);
 	set_red();
