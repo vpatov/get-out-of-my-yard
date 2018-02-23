@@ -16,6 +16,7 @@ bool key_press_started = false;
 bool trigger_intruder = false;
 
 
+
 // TODO
 /*
 	1) configure the freetype library to display some text
@@ -145,12 +146,26 @@ bool key_in_combo(int key, std::vector<int> &key_combo){
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
+
+	printf("action: %d\n",action);
+
 	if (!key_press_started){
 		key_press_started = true;
 	}
 	else if (!key_in_combo(key,	combo_keycodes)){
 		trigger_intruder = true;
 	}
+
+	// if pressing down
+	if (action == 1){
+		pressed_keys[key] = true;
+	}
+
+	// if releasing
+	else if (action == 0){
+		pressed_keys[key] = false;
+	}
+
 	printf("key: %d, scancode: %d, action: %d, mods: %d\n", key, scancode, action, mods);
 }
 
@@ -170,8 +185,23 @@ bool process_keys(){
 			break;
 		}
 
+	
 
-		if (trigger_intruder)
+		// if key_press_started && no keys are being pressed right now, trigger intruder	
+
+		int count_pressed = 0;
+		for (std::vector<int>::iterator it = combo_keycodes.begin(); it != combo_keycodes.end(); it++){
+			if (glfwGetKey(window,*it) == GLFW_PRESS){
+				count_pressed++;
+			}
+		}
+		if (count_pressed == combo_keycodes.size())
+			return true;
+
+		else if (count_pressed == 0 && key_press_started)
+			return false;	
+
+		else if (trigger_intruder)
 			return false;
 
 		//if (key_press_started)

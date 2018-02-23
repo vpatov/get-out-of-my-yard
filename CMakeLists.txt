@@ -42,6 +42,7 @@ add_executable(getout
     getout.cpp
     utils.cpp
     keys.cpp
+		getout.h
 )
 
 

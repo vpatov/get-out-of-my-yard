@@ -1,6 +1,11 @@
 
 #include "getout.h"
 
+using namespace std;
+
+
+bool pressed_keys[GLFW_KEY_LAST+1];
+
 
 // taken from glfw-3.2.1/tests/events.c
 static const char* get_key_name(int key)
@@ -136,9 +141,9 @@ static const char* get_key_name(int key)
 }
 
 
-void get_keys(GLFWwindow *window, std::vector<int> *keys){
+void get_keys(std::vector<int> *keys){
 	for (int i = GLFW_KEY_SPACE; i < GLFW_KEY_LAST; i++){
-		if (window->keys[i] == GLFW_PRESS){
+		if (pressed_keys[i]){
 			keys->push_back(i);
 		}
 	}

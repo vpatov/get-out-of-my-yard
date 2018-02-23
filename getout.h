@@ -20,9 +20,12 @@
 #include FT_TRIGONOMETRY_H
 
 
+extern bool pressed_keys[GLFW_KEY_LAST+1];
+
 int get_keycode(std::string key);
 void split(const std::string &s, char delim, std::vector<std::string> result);
 std::vector<std::string> split(const std::string &s, char delim);
-void get_keys(GLFWwindow *window, std::vector<int> *keys);
+
+//void get_keys(GLFWwindow *window, std::vector<int> *keys);
 
 #endif
