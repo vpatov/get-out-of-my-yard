@@ -136,6 +136,13 @@ static const char* get_key_name(int key)
 }
 
 
+void get_keys(GLFWwindow *window, std::vector<int> *keys){
+	for (int i = GLFW_KEY_SPACE; i < GLFW_KEY_LAST; i++){
+		if (window->keys[i] == GLFW_PRESS){
+			keys->push_back(i);
+		}
+	}
+}
 
 
 

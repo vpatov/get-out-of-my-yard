@@ -1,20 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <glfw3.h>
-#include <ft2build.h>
 
-
-//#include <SFML/Audio.hpp>
-#include <string>
-#include <vector>
 #include "getout.h"
 
-#include FT_FREETYPE_H
-#include FT_GLYPH_H
-#include FT_OUTLINE_H
-#include FT_TRIGONOMETRY_H
-
-#include <iostream>
 using namespace std;
 
 int window_width, window_height;
@@ -27,25 +13,30 @@ GLFWmonitor* monitor;
 const GLFWvidmode *mode, *modes;
 
 bool key_press_started = false;
-
+bool trigger_intruder = false;
 
 
 // TODO
 /*
 	1) configure the freetype library to display some text
 	2) Refactor, organize and make the code cleaner and more elegant
-	3) Key combo to break program.
+	3) Key combo to break program + mouse movement to trigger intruder.
 	4) Talk to python code that will take picture. 
 		a) Open up socket, bind it to ephemeral port on localhost
 		b) Pass port number to python script.
 		c) Python script waits for signal from C program to take picture.
 		d) Python script sends signal to c program once script is done.
+
+	5) Figure out good way to get home directory in project, to call python script and save image.
+	6) Look into how GLFW threads and see if you can create two functions, flicker() and check_keys().
+		This separation would be cleanest and would make most sense. You should be able to just use pthreads. 
+
 */
 
 
    
 
-string default_key_combo = "LEFT CONTROL,RIGHT SHIFT,A,P,L";
+string default_key_combo = "LEFT CONTROL,LEFT SHIFT,A";
 vector<int> combo_keycodes;
 
 void set_yellow(){
@@ -55,11 +46,6 @@ void set_yellow(){
 void set_red(){
 	glClearColor(0.8f,0.1f,0.1f,0.0f);
 }
-
-
-
-
-
 
 
 void get_screen_resolution(GLFWmonitor *monitor) {
@@ -86,28 +72,27 @@ void init_key_combo(){
     	keycode = get_keycode(*it);
     	if (keycode >= 0)
     		combo_keycodes.push_back(keycode);
-    	cout << keycode << endl;
+
+    	printf("%d\n", keycode);
     }
-
-
 }
+
+
 
 void init_user_preferences(){
 	init_key_combo();
 }
 
+
+
 void intruder(){
-	// Dark blue background
-	float cur_seconds, prev_seconds;
+	float cur_seconds, prev_seconds, flicker_rate;
 	bool red = true;
 
-/*
-	sf::Music music;
-	if (music.openFromFile("alarm.wav"))
-		music.play();
-*/
 
+	// system("python3 ../take_picture.py");
 
+	flicker_rate = 0.4;
 	glfwSetWindowMonitor(window,monitor,0,0,mode->width,mode->height,mode->refreshRate);
 	set_red();
 	prev_seconds = glfwGetTime();
@@ -120,7 +105,7 @@ void intruder(){
 		glfwPollEvents();
 
 		cur_seconds = glfwGetTime();
-		if (cur_seconds - prev_seconds >= 0.7){
+		if (cur_seconds - prev_seconds >= flicker_rate){
 			prev_seconds = cur_seconds;
 			if (red){
 				set_yellow();
@@ -132,6 +117,11 @@ void intruder(){
 			}
 		}
 
+		if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS && glfwGetKey(window, GLFW_KEY_C) == GLFW_PRESS){
+			printf("Escape sequence captured.\n");
+			break;
+		}
+
 		if (glfwGetKey(window, GLFW_KEY_ESCAPE ) == GLFW_PRESS){
 			printf("ESC key pressed.\n");
 			break;
@@ -144,6 +134,13 @@ void intruder(){
 
 
 
+bool key_in_combo(int key, std::vector<int> &key_combo){
+	for (std::vector<int>::iterator it = key_combo.begin(); it != key_combo.end(); it++){
+		if (*it == key)
+			return true;
+	}
+	return false;
+}
 
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
@@ -151,7 +148,10 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 	if (!key_press_started){
 		key_press_started = true;
 	}
-    printf("key: %d, scancode: %d, action: %d, mods: %d\n", key, scancode, action, mods);
+	else if (!key_in_combo(key,	combo_keycodes)){
+		trigger_intruder = true;
+	}
+	printf("key: %d, scancode: %d, action: %d, mods: %d\n", key, scancode, action, mods);
 }
 
 
@@ -160,6 +160,9 @@ bool process_keys(){
 	do{
 		glfwWaitEvents();
 
+		// for (vector<int>::iterator it = combo_keycodes.begin(); it != combo_keycodes.end(); it++){
+		// 	printf("%d\n", *it);
+		// }
 
 		if (glfwGetKey(window, GLFW_KEY_ESCAPE ) == GLFW_PRESS){
 			printf("ESC key pressed.\n");
@@ -167,11 +170,17 @@ bool process_keys(){
 			break;
 		}
 
-		if (key_press_started)
+
+		if (trigger_intruder)
 			return false;
+
+		//if (key_press_started)
+		//	return false;
 
 	} // Check if the ESC key was pressed or the window was closed
 	while(glfwWindowShouldClose(window) == 0 );
+
+	return true;
 }
 
 
@@ -194,7 +203,6 @@ int main( void )
 		return -1;
 	}
 
-	system("python3");
 	
 	monitor = glfwGetPrimaryMonitor();
 	mode = glfwGetVideoMode(monitor);
@@ -239,7 +247,7 @@ int main( void )
 		return 0;
 	}
 	else {
-		std::cout << "I scream.. no sound. <I had already tried>." << std::endl;
+		printf("I scream.. no sound. <I had already tried>.\n");
 		intruder();
 		
 

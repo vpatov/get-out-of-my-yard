@@ -105,42 +105,42 @@ CMakeFiles/getout.dir/utils.cpp.o.provides: CMakeFiles/getout.dir/utils.cpp.o.re
 CMakeFiles/getout.dir/utils.cpp.o.provides.build: CMakeFiles/getout.dir/utils.cpp.o
 
 
-CMakeFiles/getout.dir/keymap.cpp.o: CMakeFiles/getout.dir/flags.make
-CMakeFiles/getout.dir/keymap.cpp.o: ../keymap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vasia/repos/get-out-of-my-yard/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/getout.dir/keymap.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/getout.dir/keymap.cpp.o -c /Users/vasia/repos/get-out-of-my-yard/keymap.cpp
+CMakeFiles/getout.dir/keys.cpp.o: CMakeFiles/getout.dir/flags.make
+CMakeFiles/getout.dir/keys.cpp.o: ../keys.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vasia/repos/get-out-of-my-yard/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/getout.dir/keys.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/getout.dir/keys.cpp.o -c /Users/vasia/repos/get-out-of-my-yard/keys.cpp
 
-CMakeFiles/getout.dir/keymap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/getout.dir/keymap.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vasia/repos/get-out-of-my-yard/keymap.cpp > CMakeFiles/getout.dir/keymap.cpp.i
+CMakeFiles/getout.dir/keys.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/getout.dir/keys.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vasia/repos/get-out-of-my-yard/keys.cpp > CMakeFiles/getout.dir/keys.cpp.i
 
-CMakeFiles/getout.dir/keymap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/getout.dir/keymap.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vasia/repos/get-out-of-my-yard/keymap.cpp -o CMakeFiles/getout.dir/keymap.cpp.s
+CMakeFiles/getout.dir/keys.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/getout.dir/keys.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vasia/repos/get-out-of-my-yard/keys.cpp -o CMakeFiles/getout.dir/keys.cpp.s
 
-CMakeFiles/getout.dir/keymap.cpp.o.requires:
+CMakeFiles/getout.dir/keys.cpp.o.requires:
 
-.PHONY : CMakeFiles/getout.dir/keymap.cpp.o.requires
+.PHONY : CMakeFiles/getout.dir/keys.cpp.o.requires
 
-CMakeFiles/getout.dir/keymap.cpp.o.provides: CMakeFiles/getout.dir/keymap.cpp.o.requires
-	$(MAKE) -f CMakeFiles/getout.dir/build.make CMakeFiles/getout.dir/keymap.cpp.o.provides.build
-.PHONY : CMakeFiles/getout.dir/keymap.cpp.o.provides
+CMakeFiles/getout.dir/keys.cpp.o.provides: CMakeFiles/getout.dir/keys.cpp.o.requires
+	$(MAKE) -f CMakeFiles/getout.dir/build.make CMakeFiles/getout.dir/keys.cpp.o.provides.build
+.PHONY : CMakeFiles/getout.dir/keys.cpp.o.provides
 
-CMakeFiles/getout.dir/keymap.cpp.o.provides.build: CMakeFiles/getout.dir/keymap.cpp.o
+CMakeFiles/getout.dir/keys.cpp.o.provides.build: CMakeFiles/getout.dir/keys.cpp.o
 
 
 # Object files for target getout
 getout_OBJECTS = \
 "CMakeFiles/getout.dir/getout.cpp.o" \
 "CMakeFiles/getout.dir/utils.cpp.o" \
-"CMakeFiles/getout.dir/keymap.cpp.o"
+"CMakeFiles/getout.dir/keys.cpp.o"
 
 # External object files for target getout
 getout_EXTERNAL_OBJECTS =
 
 getout: CMakeFiles/getout.dir/getout.cpp.o
 getout: CMakeFiles/getout.dir/utils.cpp.o
-getout: CMakeFiles/getout.dir/keymap.cpp.o
+getout: CMakeFiles/getout.dir/keys.cpp.o
 getout: CMakeFiles/getout.dir/build.make
 getout: /usr/local/lib/libglfw3.a
 getout: /usr/local/lib/libfreetype.dylib
@@ -156,7 +156,7 @@ CMakeFiles/getout.dir/build: getout
 
 CMakeFiles/getout.dir/requires: CMakeFiles/getout.dir/getout.cpp.o.requires
 CMakeFiles/getout.dir/requires: CMakeFiles/getout.dir/utils.cpp.o.requires
-CMakeFiles/getout.dir/requires: CMakeFiles/getout.dir/keymap.cpp.o.requires
+CMakeFiles/getout.dir/requires: CMakeFiles/getout.dir/keys.cpp.o.requires
 
 .PHONY : CMakeFiles/getout.dir/requires
 

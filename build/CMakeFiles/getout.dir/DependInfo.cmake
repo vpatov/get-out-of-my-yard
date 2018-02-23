@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/vasia/repos/get-out-of-my-yard/getout.cpp" "/Users/vasia/repos/get-out-of-my-yard/build/CMakeFiles/getout.dir/getout.cpp.o"
-  "/Users/vasia/repos/get-out-of-my-yard/keymap.cpp" "/Users/vasia/repos/get-out-of-my-yard/build/CMakeFiles/getout.dir/keymap.cpp.o"
+  "/Users/vasia/repos/get-out-of-my-yard/keys.cpp" "/Users/vasia/repos/get-out-of-my-yard/build/CMakeFiles/getout.dir/keys.cpp.o"
   "/Users/vasia/repos/get-out-of-my-yard/utils.cpp" "/Users/vasia/repos/get-out-of-my-yard/build/CMakeFiles/getout.dir/utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
@@ -16,6 +16,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/local/include"
   "/System/Library/Frameworks/OpenGL.framework"
   "/usr/local/include/GLFW"
+  "../."
   )
 
 # Targets to which this target links.

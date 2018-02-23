@@ -7,22 +7,8 @@
 #IncludeRegexTransform: 
 
 /Users/vasia/repos/get-out-of-my-yard/getout.cpp
-stdio.h
--
-stdlib.h
--
-glfw3.h
--
-ft2build.h
--
-string
--
-vector
--
 getout.h
 /Users/vasia/repos/get-out-of-my-yard/getout.h
-iostream
--
 
 /Users/vasia/repos/get-out-of-my-yard/getout.h
 glfw3.h
@@ -35,8 +21,16 @@ vector
 -
 iterator
 -
+stdio.h
+-
+stdlib.h
+-
+glfw3.h
+-
+ft2build.h
+-
 
-/Users/vasia/repos/get-out-of-my-yard/keymap.cpp
+/Users/vasia/repos/get-out-of-my-yard/keys.cpp
 getout.h
 /Users/vasia/repos/get-out-of-my-yard/getout.h
 

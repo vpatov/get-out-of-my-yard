@@ -7,11 +7,15 @@ CMakeFiles/getout.dir/getout.cpp.o
  /usr/local/include/GLFW/glfw3.h
  /usr/local/include/freetype2/freetype/config/ftheader.h
  /usr/local/include/freetype2/ft2build.h
-CMakeFiles/getout.dir/keymap.cpp.o
+CMakeFiles/getout.dir/keys.cpp.o
  /Users/vasia/repos/get-out-of-my-yard/getout.h
- /Users/vasia/repos/get-out-of-my-yard/keymap.cpp
+ /Users/vasia/repos/get-out-of-my-yard/keys.cpp
  /usr/local/include/GLFW/glfw3.h
+ /usr/local/include/freetype2/freetype/config/ftheader.h
+ /usr/local/include/freetype2/ft2build.h
 CMakeFiles/getout.dir/utils.cpp.o
  /Users/vasia/repos/get-out-of-my-yard/getout.h
  /Users/vasia/repos/get-out-of-my-yard/utils.cpp
  /usr/local/include/GLFW/glfw3.h
+ /usr/local/include/freetype2/freetype/config/ftheader.h
+ /usr/local/include/freetype2/ft2build.h

@@ -7,11 +7,15 @@ CMakeFiles/getout.dir/getout.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/getout.dir/getout.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
 CMakeFiles/getout.dir/getout.cpp.o: /usr/local/include/freetype2/ft2build.h
 
-CMakeFiles/getout.dir/keymap.cpp.o: ../getout.h
-CMakeFiles/getout.dir/keymap.cpp.o: ../keymap.cpp
-CMakeFiles/getout.dir/keymap.cpp.o: /usr/local/include/GLFW/glfw3.h
+CMakeFiles/getout.dir/keys.cpp.o: ../getout.h
+CMakeFiles/getout.dir/keys.cpp.o: ../keys.cpp
+CMakeFiles/getout.dir/keys.cpp.o: /usr/local/include/GLFW/glfw3.h
+CMakeFiles/getout.dir/keys.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
+CMakeFiles/getout.dir/keys.cpp.o: /usr/local/include/freetype2/ft2build.h
 
 CMakeFiles/getout.dir/utils.cpp.o: ../getout.h
 CMakeFiles/getout.dir/utils.cpp.o: ../utils.cpp
 CMakeFiles/getout.dir/utils.cpp.o: /usr/local/include/GLFW/glfw3.h
+CMakeFiles/getout.dir/utils.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
+CMakeFiles/getout.dir/utils.cpp.o: /usr/local/include/freetype2/ft2build.h
 

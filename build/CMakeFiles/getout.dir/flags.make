@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include/freetype2 -isystem /usr/local/include -I/usr/local/include/GLFW 
+CXX_INCLUDES = -I/usr/local/include/freetype2 -isystem /usr/local/include -I/usr/local/include/GLFW -I/Users/vasia/repos/get-out-of-my-yard/. 
 

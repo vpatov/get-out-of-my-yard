@@ -41,12 +41,13 @@ set(ALL_LIBS
 add_executable(getout
     getout.cpp
     utils.cpp
-    keymap.cpp
+    keys.cpp
 )
 
 
 include_directories(
 	${OPENGL_INCLUDE_DIR}
 	/usr/local/include/GLFW
+	./
 )
 target_link_libraries(getout ${ALL_LIBS})
