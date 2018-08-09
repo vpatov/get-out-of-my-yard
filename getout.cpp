@@ -31,7 +31,7 @@ bool trigger_intruder = false;
 	5) Figure out good way to get home directory in project, to call python script and save image.
 	6) Look into how GLFW threads and see if you can create two functions, flicker() and check_keys().
 		This separation would be cleanest and would make most sense. You should be able to just use pthreads. 
-
+				^^ lol not necessary compoopers are fast
 */
 
 
